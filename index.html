@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,900;1,300;1,700&display=swap"
     rel="stylesheet" />
@@ -69,9 +70,8 @@
 
 
 
-
-    <main id="main" class="mt-5">
-        <div id="carousel" class="carousel slide " data-bs-ride="carousel" data-pause='false'>
+    <main id="main">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-pause='false'>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="src/home.png" class="d-block w-100" alt="...">
@@ -112,26 +112,135 @@
         </div>
 
 
-    </main>
+    </main> 
+    
+<div class="container-fluid">
 
-    <div id="artistas" class="container my-5">
-        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quam minima perspiciatis eos tenetur.
-            Praesentium dolores at quos aperiam sed, sint provident consectetur incidunt, nostrum porro earum commodi,
-            ex architecto.</p>
-
+  <section id="artistas" >
+  
+    <div class="text-center mt-2 mb-5">
+      <h1 class="section-title-01  display-4">Artistas Fueguinos</h1>
+      <h2 class="section-title-02  display-6">Artistas Fueguinos</h2>
     </div>
 
 
+  <div class="row my-5">
+    <div class="col">
+      <div id="carouselExampleControls" class="carousel " data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="card">
+              <div class="img-wrapper">
+                <img src="src/jorge.jpg"  alt="...">
+              </div>
+          
+              <div class="card-body">
+                <h5 class="card-text mb-0">Jorge Iasich</h5>
+                <p class="card-text ">Pintor</p>   
+               </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card" >
+              <div class="img-wrapper">
+                <img src="src/jorge.jpg"  alt="...">
+                
+              </div>
+
+            
+              <div class="card-body">
+                <h5 class="card-text mb-0">Jorge Iasich</h5>
+                <p class="card-text ">Pintor</p>  
+                </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card" >
+              <div class="img-wrapper">
+                <img src="src/kaos.jpg"  alt="...">
+              </div>
+              
+              <div class="card-body">
+                <h5 class="card-text mb-0">Phon Kaos</h5>
+                <p class="card-text ">Pintor</p>   
+                </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card" >
+              <div class="img-wrapper">
+                <img src="src/chaman.jpg" alt="...">
+
+              </div>
+             
+              <div class="card-body">
+             
+                  <h5 class="card-text mb-0">El Chaman</h5>
+                  <p class="card-text ">Pintor</p>   
+                 </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card" >
+              <div class="img-wrapper">
+                <img src="src/ABT.jpg"  alt="...">
+              </div>              
+              <div class="card-body">
+                <h5 class="card-text mb-0">ABT</h5>
+                <p class="card-text ">Pintor</p>  
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card">
+              <div class="img-wrapper">
+                <img src="src/ABT.jpg"  alt="...">
+              </div>              
+              <div class="card-body">
+                <h5 class="card-text mb-0">ABT</h5>
+                <p class="card-text ">Pintor</p>  
+            </div>
+          </div>
+
+        </div>
+    
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon " aria-hidden="false"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" touch="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+ 
+
+</section>
+
+  
+</div>
 
 
 
-
-
+<script
+src="https://code.jquery.com/jquery-3.6.1.min.js"
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+crossorigin="anonymous"></script>
+<script src="index.js"></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
+
 </body>
 
 </html>

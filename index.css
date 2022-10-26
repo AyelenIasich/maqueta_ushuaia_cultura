@@ -18,19 +18,18 @@ html {
   --third-color: #777;
   --white-color: #fff;
 
-  --hover-blue-dark:rgba(62,141,166,1) ;
+  --hover-blue-dark: rgba(62, 141, 166, 1);
   /* Hover colors */
   --hover-color: #614fd0;
 
   /* Background colors */
-  --body-bg-color: # 1A1525;
+  --body-bg-color: #1a1525;
   --card-bg-color: #fff;
   --modal-bg-color: #fff;
   --bg-transparrent-color: rgba(0, 0, 0, 0.1);
   --transparent-color-01: rgba(0, 0, 0, 0.1);
   --transparent-color-02: rgba(106, 89, 209, 0.1);
   --line-color: #d7d7d7;
-
 
   /*  */
 
@@ -50,7 +49,7 @@ html {
   --scroll-thumb-color: #70768a;
   --scroll-thumb-hover-color: #454f6b;
 
-  --main-color-blue-light:#6eaeae;
+  --main-color-blue-light: #6eaeae;
 
   --main-color-light: #6a59d1;
   --main-color-dark: #7c6cd9;
@@ -60,14 +59,10 @@ html {
 
 body {
   color: var(--first-color);
-  background: var(--body-bg-color)!important;
-
+  background: var(--body-bg-color) !important;
   transition: 0.5 ease;
 }
 
-.dark{
-  background: var(--body-bg-color)!important;
-}
 /* =============== Scroll Bar =========== */
 ::-webkit-scrollbar {
   width: 10px;
@@ -84,14 +79,13 @@ body {
 }
 
 /* ============= Header ================ */
-.nav-item a, header a{
-  color: var(--link-navbar-color2)!important;
-  padding-top:0.6em;
+.nav-item a, header a {
+  color: var(--link-navbar-color2) !important;
+  padding-top: 0.6em;
 }
 
-.nav-item a:hover, header a:hover {
+.nav-item a:hover,header a:hover {
   color: var(--main-color-blue-light) !important;
-
 }
 .ushuaia {
   font-weight: 400 !important;
@@ -99,20 +93,18 @@ body {
   font-size: 22px;
 }
 
-.cultura{
+.cultura {
   font-weight: 600 !important;
   color: var(--white-color) !important;
   font-size: 22px;
 }
 
-
-.navbar{
+.navbar {
   background: hsl(0 0% 100% / 0.1) !important;
   backdrop-filter: blur(1rem);
 }
 .nav {
   z-index: 2 !important;
-
 }
 .nav-item a,
 .navbar .logo {
@@ -120,13 +112,11 @@ body {
 }
 .navbar-brand {
   font-size: 0.9em;
-
 }
 main {
   z-index: -1;
+  margin-top: 4.1em;
 }
-
-
 
 /* ============= Button Login ================ */
 /* .btn-success {
@@ -140,29 +130,34 @@ main {
   color: white!important;
 } */
 
-.btn-success  {
-/* width: 100%; */
-  border: none!important;
+.btn-success {
+  /* width: 100%; */
+  border: none !important;
   color: white !important;
   font-weight: 500;
 
-  box-shadow: inset 0 0 0 0 rgba(62,141,166,1)!important;
+  box-shadow: inset 0 0 0 0 rgba(62, 141, 166, 1) !important;
   transition: ease-out 0.5s;
   /* background: rgb(143,177,186);
   background: linear-gradient(93deg, rgba(143,177,186,1) 0%, rgba(110,174,174,1) 19%, rgba(113,162,177,1) 100%); */
-  background: rgb(143,177,186);
-background: linear-gradient(93deg, rgba(143,177,186,1) 0%, rgba(110,174,174,1) 45%, rgba(62,141,166,1) 100%);
+  background: rgb(143, 177, 186);
+  background: linear-gradient(
+    93deg,
+    rgba(143, 177, 186, 1) 0%,
+    rgba(110, 174, 174, 1) 45%,
+    rgba(62, 141, 166, 1) 100%
+  );
 }
 
 .btn-success:hover {
   border: none;
-  box-shadow: inset 300px 0 0 0 rgba(62,141,166,1)  !important;
+  box-shadow: inset 300px 0 0 0 rgba(62, 141, 166, 1) !important;
 }
 
 /* ============= Main ================ */
 
 #main .carousel-inner img {
-  max-height: 80vh;
+  max-height: 90vh;
   object-fit: cover;
   filter: grayscale(70%);
 }
@@ -182,7 +177,7 @@ background: linear-gradient(93deg, rgba(143,177,186,1) 0%, rgba(110,174,174,1) 4
   z-index: 1 !important;
 }
 
-#carousel .overlay .container{
+#carousel .overlay .container {
   height: 100%;
 }
 
@@ -193,19 +188,15 @@ background: linear-gradient(93deg, rgba(143,177,186,1) 0%, rgba(110,174,174,1) 4
   height: 10%;
 }
 
-
-
 /* Scroll down */
 
 .scroll-down {
   color: var(--white-color);
-  font-size:1em;
+  font-size: 1em;
   font-weight: 500;
   margin-top: 20px;
-
-
 }
-.scroll-down:hover{
+.scroll-down:hover {
   color: var(--hover-blue-dark);
 }
 
@@ -227,4 +218,79 @@ a {
   30% {
     transform: translateY(10px);
   }
+}
+
+/* Carrrousel Artistas */
+
+#artistas .img-wrapper {
+  max-width: 100% !important;
+  height: 65vw !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+}
+
+#artistas  img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 576px) {
+  #artistas  .carousel-inner {
+    display: flex !important;
+  }
+  #artistas  .carousel-item {
+    display: block !important;
+    margin-right: 0 !important;
+    flex: 0 0 calc(100% / 4) !important;
+  }
+  #artistas  .img-wrapper {
+    height: 28vw !important;
+  }
+}
+#artistas  .carousel-inner {
+  padding: 1.8em;
+}
+
+#artistas .card {
+  margin: 0 0.9em !important;
+  background: var(--body-bg-color) !important;
+  color: var(--white-color) !important;
+  border: none !important;
+}
+
+
+/* ====================== Titulo ========================*/
+
+#artistas{
+  margin-top: 3em;
+}
+
+.section-title-01 {
+  font-weight: 800!important;
+  margin-bottom: 2rem;
+  background: linear-gradient(to top, transparent 0%,  #0e2431 70%)!important;
+  --webkit-background-clip: text !important;
+  --webkit-text-fill-color: transparent !important;
+  opacity: 0.3;
+  font-family: "Poppins", sans-serif;
+  
+}
+
+.section-title-02 {
+  font-weight: 700!important;
+  transform: translateY(-65px)!important;
+  position: relative!important;
+  color: var(--white-color);
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title-02::before {
+  content: " ";
+  position: absolute!important;
+  bottom: 0;
+  height: 5px!important;
+  width: 70px!important;
+  background-color: var(--main-color-blue-light);
 }
