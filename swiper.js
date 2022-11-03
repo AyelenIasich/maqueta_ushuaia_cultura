@@ -13,7 +13,7 @@ var swiper = new Swiper(".mySwiper", {
 
 
         360:{
-            slidesPerView:1.6,
+            slidesPerView:2.2,
             spaceBetween:0,
         },
         680:{
