@@ -344,14 +344,23 @@ main {
   }
 
   .content h1{
-    font-size:1.2em;
+    font-size:1.3em;
+    font-weight: 600;
    
   }
   .content p{
-    font-size: 0.9em;
+    font-size: 1em;
     color:  var(--color-main-card);
 
   }
+  .descripcion p {
+    overflow-wrap: break-word;
+    line-height: 1.6;
+    letter-spacing: 0.8px;
+    transition: 0.6s ease;
+   
+  }
+
   .scroll-down{
     color:  var(--color-main-card)!important;
     font-weight: 600!important;
