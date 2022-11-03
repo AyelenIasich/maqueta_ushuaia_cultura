@@ -4,7 +4,7 @@ var swiper = new Swiper(".mySwiper", {
         nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev'
     },
     slidesPerView:1,
-    spaceBetween:10,
+    spaceBetween:0,
 
 
     breakpoints:{
