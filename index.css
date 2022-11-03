@@ -356,7 +356,11 @@ main {
     color:  var(--color-main-card)!important;
     font-weight: 600!important;
   }
-
+  .scroll-down:hover{
+    color: var(--hover-blue-dark)!important;
+    font-weight: 600!important;
+  }   
+ 
 }
 #main {
   margin-top: 4.1em;
