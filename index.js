@@ -1,4 +1,8 @@
 
+
+
+
+
 var carouselWidth = $('#artistas .carousel-inner')[0].scrollWidth;
 var cardWitdth = $('#artistas .carousel-item').width();
 

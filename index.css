@@ -627,7 +627,10 @@ a {
   cursor: pointer;
 }
 
-/* swiper */
+
+/* ========================Swiper=================================== */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -673,10 +676,52 @@ height: 100%;
   align-items: flex-start !important;
   display: flex !important;
 
+  
+
 }
+
+.card_image{
+  position: relative;
+  overflow: hidden;
+}
+.enlace-galeria {
+
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,1));
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transform: translateY(100%);
+    transition: transform 500ms ease;
+
+
+}
+
+.enlace-galeria a:link, a:visited {
+  text-decoration: none;
+}
+.enlace-galeria a{
+ 
+  color: white;
+}
+.enlace-galeria a:hover{
+ 
+  color:  #c5cadf;
+}
+
+
+
 .card-tarjeta:hover {
   transform: scale(1.05) !important;
 }
+.card-tarjeta:hover .enlace-galeria {
+  transform: translateY(0);
+}
+
 
 /* .swiper-slide img {
   display: block;
