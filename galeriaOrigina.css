@@ -100,14 +100,11 @@
   font-family: "Poppins", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   color: var(--first-color) !important;
   background: var(--body-bg-color) !important;
-  transition: 0.5s ease;
+
 }
 
 

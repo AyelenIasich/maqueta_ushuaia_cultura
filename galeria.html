@@ -106,6 +106,10 @@
       <div class="gallery__item">
         <img src="galeria/galeria1.jpg" data-img-mostrar="0" alt="" class="gallery__img" />
         <h2 class="gallery__title">Imagen 1</h2>
+        <div class="enlace-expand"><a data-bs-toggle="modal"
+          data-bs-target="#showModal"><i
+              class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+  </div>
       </div>
       <div class="gallery__item">
         <img src="galeria/galeria2.jpg" data-img-mostrar="1" alt="" class="gallery__img" />
@@ -152,6 +156,47 @@
   </div>
 
 </section> 
+
+
+
+
+<div class="modal fade" tabindex="-1" id="showModal">
+  <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="row  ">
+                  <div class="col-12"> <img src="galeria/galeria1.jpg"
+                          class="img_responsive one-image-galeria"></div>
+              </div>
+              <div class="row mt-3 justify-content-between">
+                  <div class="col-6">
+                      <p class="titulo-obra"><span class="importante">Título:
+                      </span>La chica en el agua</p>
+                  </div>
+                 
+                      <div class="col-6">
+                          <p class="fecha-obra"><span class="importante">Fecha Creación:
+                              </span>11/11/2011</p>
+                      </div>
+                 
+              </div>
+            
+                  <div class="row">
+                      <div class="col">
+                          <p class="fecha-obra"><span class="importante">Descripción:
+                              </span>Cuadro de 50 x 50 centrimetros. Metodo: acrilico</p>
+                      </div>
+                  </div>
+            
+          </div>
+      </div>
+  </div>
+</div>
+
    
         
 
